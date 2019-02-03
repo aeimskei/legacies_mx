@@ -1,0 +1,117 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+* {
+	box-sizing: border-box;
+}
+body {
+  background:     
+    linear-gradient(
+      /* hexadecimal color #333333 has RGB values of R:51, G:51, B:51 */
+      /* rgba(51, 51, 51, 0.5),
+      rgba(51, 51, 51, 0.5) */
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('../images/girlonbike.png');
+  background-size: cover;
+}
+.center, .center-align {
+  text-align: center;
+}
+/* map */
+.map-container {
+  flex: 1;
+  align-self: center;
+}
+#us-map{
+  display: block;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+}
+.state {
+  fill: #d4df5b;
+  opacity: 0.5;
+}
+.state:hover, circle:hover {
+  /* stroke: #145b86 !important; */
+  /* stroke-width:2px; */
+  stroke-linejoin: round;
+  fill: #145b86 !important;
+  cursor: pointer;
+}
+.state-text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 100%;
+  writing-mode: lr-tb;
+  text-anchor: start;
+  fill: #FFFFFF;
+  fill-opacity: 0.75;
+  stroke: #FFFFFF;
+  stroke-width: 0.5pt;
+  font-family: Josefin Sans;
+}
+#info-box {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: #ffffff;
+  border: 2px solid #4498cb;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: Lato;
+}
+#AK {
+  transform: rotate(-15deg) translate(-300px,-400px);
+}
+#text950 {
+  transform: translate(-283px,-495px);
+}
+#HI {
+  transform: translate(-400px,-200px);
+}
+#text953 {
+  transform: translate(-410px,-330px);
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+/* --------- Small Screens --------- */
+@media (min-width: 320px) and (max-width: 600px) {
+
+  /* -------- Map Container -------- */  
+  #us-map{
+    padding: 20px 10px 0px 10px;
+  }
+  #info-box {
+    font-size: 12px;
+  }
+
+}
+
+/* --------- Medium Screens --------- */
+@media (min-width: 769px) {
+
+  /* -------- Map Container -------- */  
+  #us-map{
+    padding: 0px 25px 0px 25px;
+  }
+
+}
+
+/* --------- Larger Screens --------- */
+@media (min-width: 1025px) {
+
+
+}
