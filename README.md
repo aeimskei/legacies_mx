@@ -2,6 +2,8 @@
 
 Interactive educational app about impact of the Secret War in Laos.
 
+https://legaciesmx.netlify.com/
+
 # Overview Tasks
 
 - [x] Remove all old files, redo for redesign and responsive layouts
